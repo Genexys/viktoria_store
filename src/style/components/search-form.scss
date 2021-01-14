@@ -1,0 +1,100 @@
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    font-family: "MyriadPro";
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: .03em;
+    line-height: 13px;
+    text-align: left;
+    color: #f9f9f9;
+
+    &:nth-of-type(1) {
+      margin-right: 15px;
+    }
+
+    &:nth-of-type(2) {
+      margin: 0 15px;
+    }
+  }
+
+  &__type {
+    position: relative;
+    flex: 1;
+
+    .custom-select {
+      flex-shrink: 0;
+    }
+  }
+
+  .custom-select {
+    flex: 1;
+    margin: 0 3px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 40px;
+    padding: 0;
+    margin: 0 0 0 5px;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, .2);
+    background-color: var(--blueColor);
+    cursor: pointer;
+    transition: opacity .3s;
+    outline: none;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__link-params {
+    position: absolute;
+    right: 0;
+    bottom: -100%;
+    padding-top: 25px;
+
+    font-family: "MyriadPro";
+    font-weight: normal;
+    text-decoration: underline;
+    font-size: 12px;
+    letter-spacing: .03em;
+    line-height: 14.4px;
+    text-align: left;
+    color: #fefefe;
+    opacity: .5;
+  }
+}
+
+.select-type {
+  position: absolute;
+  bottom: -100%;
+  padding-top: 25px;
+  font-family: MyriadPro;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: .03em;
+  line-height: 14.4px;
+  text-align: left;
+  color: #2fa4db;
+
+  button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    text-decoration: underline;
+    color: #2fa4db;
+    outline: none;
+    cursor: pointer;
+  }
+}

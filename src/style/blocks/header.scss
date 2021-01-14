@@ -1,0 +1,43 @@
+.header {
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--grayColor);
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+    img {
+      margin-right: 30px;
+    }
+
+    span {
+      font-family: "MyriadPro";
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: .03em;
+      line-height: 13px;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--darkBlueMainColor);
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+}
+
+.search-btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}

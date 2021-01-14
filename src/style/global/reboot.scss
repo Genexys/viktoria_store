@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  //background-color: $bg-white;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* :focus {
+  outline: none;
+} */
+
+// firefox placeholder fix
+input,
+textarea {
+
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+// ie11 X removal
+input {
+
+  &::-ms-clear,
+  &::-ms-reveal {
+    display: none;
+  }
+}
+
+// chrome X removal
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  appearance: none;
+}
+
+// chrome autofill background removal
+// if you have different colored inputs -
+// delete this and reuse it directly with different color settings and animation name
+input:-webkit-autofill {
+  animation-name: autofill;
+  animation-delay: 1s;
+
+  animation-fill-mode: both;
+}
+
+@keyframes autofill {
+
+  0%,
+  100% {
+    color: var(--color-default-black); // change as your input base font color
+
+    background: transparent; // change as your input base bg color
+  }
+}
+
+// ios inputs reset
+textarea,
+input:matches([type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]) {
+  appearance: none;
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-airbnb",
+  "rules": {
+    "max-nesting-depth": [5,
+      {
+        "ignoreAtRules": ["media"],
+        "ignore": ["blockless-at-rules", "pseudo-classes"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+.basket-block {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 33px;
+    padding-left: 10px;
+    border: 1px solid var(--grayColor);
+    border-right: 0;
+    font-family: "OpenSans", sans-serif;
+    font-size: 12px;
+    letter-spacing: .07em;
+    color: var(--grayDarkColor);
+  }
+
+  &__btn {
+    display: block;
+    width: 110px;
+    height: 33px;
+    border: 1px solid var(--grayColor);
+    background-color: var(--grayBg);
+    font-family: "OpenSans", sans-serif;
+    font-size: 12px;
+    letter-spacing: .07em;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+  }
+}

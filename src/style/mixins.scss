@@ -1,0 +1,45 @@
+@mixin retina {
+  @media (min-resolution: var(--retina-dpi)), (min-resolution: var(--retina-dppx)) {
+    @content;
+  }
+}
+
+// Desktop first
+
+@mixin viewport--lg {
+  @media (max-width: 1024px - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--md {
+  @media (max-width: 768px - 1) {
+    @content;
+  }
+}
+
+@mixin viewport--sm {
+  @media (max-width: 320px - 1) {
+    @content;
+  }
+}
+
+// Mobile first
+//
+// @mixin viewport--md {
+//  @media (min-width: var(--viewport--md)) {
+//    @content;
+//  }
+//}
+//
+//@mixin viewport--lg {
+//  @media (min-width: var(--viewport--lg)) {
+//    @content;
+//  }
+//}
+//
+//@mixin viewport--xl {
+//  @media (min-width: var(--viewport--xl)) {
+//    @content;
+//  }
+//}

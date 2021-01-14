@@ -1,0 +1,45 @@
+:root {
+  // Colors
+  //---------------------------------
+
+  // Default
+
+  --color-default-black: #2a2f34;
+  --color-transparent: rgba(0, 0, 0, 0);
+
+  // Base
+
+  --blackColor: #2a2f34;
+  --darkBlueMainColor: #083c50;
+  --blueColor: #026fc2;
+  --lightBlueMainColor: #b6cefe;
+  --grayColor: #eeeeee;
+  --grayDarkColor: #7e7f84;
+  --grayBg: #d5d5d5;
+  --grayBorderColor: #c7c7c7;
+
+  // Typography
+
+  --font-family: "OpenSans", "Arial", "Helvetica", sans-serif;
+
+  --font-blackColor: var(--blackColor);
+
+  // Viewports
+  //---------------------------------
+
+  --viewport--sm: 320px;
+  --viewport--md: 768px;
+  --viewport--lg: 1024px;
+  --viewport--xl: 1400px;
+
+  // Animation
+  //---------------------------------
+
+  --transition-settings: .3s ease;
+
+  // Retina
+  //---------------------------------
+
+  --retina-dpi: 144dpi;
+  --retina-dppx: 1.5dppx;
+}

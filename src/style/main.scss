@@ -1,0 +1,45 @@
+@import "variables";
+
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+
+@import "vendor/swiper";
+
+@import "vendor/slimselect";
+
+// Global
+//---------------------------------
+
+@import "mixins";
+
+@import "global/fonts";
+
+@import "global/typography";
+
+@import "global/reboot";
+
+@import "global/utils";
+
+@import "global/container";
+
+//
+// components
+//-------
+@import "components/main-nav";
+
+@import "components/basket-block";
+
+@import "components/custom-select";
+
+@import "components/search-form";
+
+//
+// blocks
+//-------
+@import "blocks/header";
+
+@import "blocks/top-inform-block";
+
+@import "blocks/search-block";
