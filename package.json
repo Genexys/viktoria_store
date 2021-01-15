@@ -70,7 +70,8 @@
   "dependencies": {
     "jquery": "^3.5.1",
     "selectize": "^0.12.6",
-    "slim-select": "^1.27.0"
+    "slim-select": "^1.27.0",
+    "swiper": "^6.4.5"
   },
   "browserslist": [
     "last 2 versions",

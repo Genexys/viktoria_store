@@ -62,7 +62,7 @@
     </div>
   </div>
 </div>
-  <div class="search-block">
+  <div class="search-block search-block--collapse">
   <div class="container search-block__wrapper">
     <figure class="search-block__logo">
       <img src="img/svg/main-logo-white.svg" alt="Виктория" title="Виктория">
@@ -134,6 +134,7 @@
     </form>
   </div>
 </div>
+
   <header class="header">
   <div class="container">
     <div class="header__top">
@@ -173,7 +174,7 @@
             <a href="" class="main-nav__link">шины</a>
 
             <ul class="main-nav__sub-list">
-              <li class="main-nav__sub-item"><a href="">Зимние</a></li>
+              <li class="main-nav__sub-item main-nav__sub-item--active"><a href="">Зимние</a></li>
               <li class="main-nav__sub-item"><a href="">Летние</a></li>
               <li class="main-nav__sub-item"><a href="">Всесезонные</a></li>
               <li class="main-nav__sub-item"><a href="">Для грузовых авто</a></li>
@@ -198,13 +199,26 @@
   </div>
 </header>
 
-
-  <main>
-
-    <div class="bg-wrapper">
-
+  <div class="main-slider">
+  <div class="main-slider__container swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="main-slider__slide">
+          <picture>
+            <source class="main-slider__slide-img" srcset="img/content/slide.jpg" media="(min-width: 1920px)">
+            <source class="main-slider__slide-img" srcset="img/content/slide.jpg" media="(min-width: 1000px)">
+            <source class="main-slider__slide-img" srcset="img/content/slide.jpg" media="(min-width: 600px)">
+            <source class="main-slider__slide-img" srcset="img/content/slide.jpg" media="(min-width: 320px)">
+            <img class="main-slider__slide-img" src="img/content/slide.jpg" alt="заголовок слайда" title="заголовок слайда">
+          </picture>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 
+
+  <main class="main-content">
 
   </main>
 

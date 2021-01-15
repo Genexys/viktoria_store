@@ -6,7 +6,7 @@ const actionHeightFormBlock = () => {
   window.addEventListener('scroll', () => {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (scrollTop > 2) {
+    if (scrollTop > 200) {
       formBlock.classList.add('search-block--collapse');
       formBlock.style.height = 0;
     }

@@ -1,4 +1,5 @@
 .top-inform-block {
+  padding: 7px 0;
   background-color: var(--darkBlueMainColor);
   font-size: 12px;
   line-height: 20px;
@@ -20,7 +21,7 @@
   }
 
   &__tel {
-    letter-spacing: 0.05rem;
+    letter-spacing: .05rem;
     color: #ffffff;
   }
 
@@ -28,16 +29,18 @@
     color: var(--lightBlueMainColor);
     font-style: italic;
     text-decoration: underline;
-    letter-spacing: 0.05rem;
+    letter-spacing: .05rem;
   }
 
   &__menu {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 
     li {
       font-size: 14px;
-      
+
       &:not(:first-of-type) {
         margin-left: 40px;
       }

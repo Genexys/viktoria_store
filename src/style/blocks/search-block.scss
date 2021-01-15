@@ -4,11 +4,12 @@
   background-color: var(--darkBlueMainColor);
   overflow: hidden;
   transition: height .3s, padding-top .3s;
-  
+
   &--collapse {
     padding-top: 0;
+    height: 0 !important;
   }
-  
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -28,20 +29,20 @@
       margin-bottom: 33px;
     }
   }
-  
+
   &__city {
     margin-bottom: 65px;
   }
-  
+
   &__city-select {
     width: 57px;
     font-size: 14px;
     color: #ffffff;
-    
+
     .ss-single-selected {
       border: 0;
       background-color: transparent;
-  
+
       .ss-arrow {
         position: absolute;
         top: 9px;
@@ -54,24 +55,24 @@
         background-repeat: no-repeat;
         background-size: 30px;
         background-position: 50% 31%;
-        
+
         span.arrow-down,
         span.arrow-up {
           display: none;
         }
       }
     }
-  
+
     .ss-content {
       font-size: 14px;
       color: var(--blackColor);
-      
+
       .ss-list {
-        
+
         .ss-option {
           padding: 3px;
           line-height: 1.3;
-          
+
           &:hover {
             background-color: #ebebeb;
             color: #5a5a5a;
@@ -80,7 +81,7 @@
       }
     }
   }
-  
+
   &__form {
     width: 100%;
   }
