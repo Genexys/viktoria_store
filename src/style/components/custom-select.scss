@@ -40,7 +40,7 @@
         background-image: url("../img/svg/icon-arrow-select.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        transition: background-image 0.3s;
+        transition: background-image .3s;
       }
 
       span.arrow-down,
@@ -76,7 +76,7 @@
 
       .ss-arrow {
         border-color: var(--darkBlueMainColor);
-  
+
         .arrow-down,
         .arrow-up {
           background-image: url("../img/svg/icon-arrow-select-blue.svg");

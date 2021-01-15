@@ -15,7 +15,17 @@
 
   font-display: swap;
   src: url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff2") format("woff2"),
-  url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff") format("woff");
+    url("../fonts/OpenSans-SemiBold/OpenSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 600;
+  font-family: "OpenSans";
+
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBoldItalic/OpenSans-SemiBoldItalic.woff2") format("woff2"),
+  url("../fonts/OpenSans-SemiBoldItalic/OpenSans-SemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +37,6 @@
   src: url("../fonts/OpenSans-Bold/OpenSans-Bold.woff2") format("woff2"),
     url("../fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff");
 }
-
 
 @font-face {
   font-style: normal;

@@ -1,0 +1,72 @@
+.services-list {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    width: 1px;
+    height: 119px;
+    background-color: #d6d6d6;
+  }
+
+  &::after {
+    left: 0;
+  }
+
+  &::before {
+    right: 0;
+  }
+
+  &__item {
+    position: relative;
+    padding: 30px 20px 15px;
+
+    &:not(:last-of-type) {
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 1px;
+        height: 119px;
+        background-color: #d6d6d6;
+      }
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #106fc2;
+  }
+
+  &__text {
+    max-width: 240px;
+    width: 100%;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--grayTextColor);
+  }
+}

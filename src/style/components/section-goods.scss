@@ -1,0 +1,50 @@
+.section-goods {
+  margin-bottom: 25px;
+
+  .container {
+    padding: 0;
+  }
+
+  &__wrapper {
+    padding-top: 20px;
+    border-top: 1px solid #d6d6d6;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: left;
+
+    span {
+      text-transform: uppercase;
+    }
+
+    a {
+      font-family: "OpenSans", sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 24px;
+      text-align: right;
+      color: #2fa4db;
+      transition: opacity .3s;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+
+  .goods-card {
+    height: 100%;
+  }
+}
+
+.goods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
