@@ -2052,9 +2052,9 @@ input[type="radio"].visually-hidden {
   .category-main-block__card:hover .category-main-block__title::before {
     transform: translateX(5px); }
   .category-main-block__card--tires {
-    background-color: #9C2A20; }
+    background-color: #9c2a20; }
   .category-main-block__card--disk {
-    background-color: #083C50; }
+    background-color: #083c50; }
   .category-main-block__card--accum {
     background-color: #317795; }
 
@@ -2095,6 +2095,6 @@ input[type="radio"].visually-hidden {
     content: ""; }
 
 .footer__top {
-  background-color: #EDEDED;
+  background-color: #ededed;
   padding-top: 18px;
   padding-bottom: 20px; }
