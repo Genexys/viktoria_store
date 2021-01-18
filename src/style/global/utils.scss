@@ -49,6 +49,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section-title {
+  margin: 0;
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -57,3 +58,30 @@ input[type="radio"].visually-hidden {
   color: var(--blackColor);
 }
 
+.section-top {
+  margin-bottom: 10px;
+  padding-top: 25px;
+  border-top: 1px solid #d6d6d6;
+  font-size: 24px;
+  line-height: 21px;
+  text-align: left;
+
+  .section-title {
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  a {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: right;
+    color: #2fa4db;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

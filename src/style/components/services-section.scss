@@ -1,5 +1,7 @@
 .services-list {
   position: relative;
+  //display: grid;
+  //grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   display: flex;
   justify-content: space-between;
   margin: 0;

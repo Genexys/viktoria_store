@@ -1,0 +1,30 @@
+.brand-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 13px;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    transition: border-color .3s;
+
+    img {
+      transition: opacity .3s;
+    }
+
+    &:hover {
+      border-color: var(--grayBorderColor);
+
+      img {
+        opacity: .8;
+      }
+    }
+  }
+}

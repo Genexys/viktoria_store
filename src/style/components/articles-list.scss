@@ -1,0 +1,31 @@
+.articles-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+
+    &:hover {
+
+      .articles-list__title {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--grayTextColor);
+  }
+}
