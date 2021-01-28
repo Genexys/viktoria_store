@@ -1,0 +1,54 @@
+.address-list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    position: relative;
+    padding: 30px 50px 15px;
+
+    @media screen and (max-width: 768px - 1) {
+      padding: 30px 20px 15px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 1px;
+      height: 119px;
+      background-color: #d6d6d6;
+    }
+  }
+}
+
+.address-contact {
+
+  &__name {
+    font-size: 24px;
+    line-height: 22px;
+    text-align: left;
+    color: #00161a;
+  }
+
+  &__address {
+    color: #002c34;
+  }
+
+  &__phone {
+    color: #002c34;
+  }
+
+  &__mail {
+    display: block;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    color: #317795;
+  }
+}

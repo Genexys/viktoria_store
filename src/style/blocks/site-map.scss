@@ -1,0 +1,119 @@
+.site-map-list {
+  padding-top: 10px;
+  padding-left: 0;
+  padding-bottom: 5px;
+  list-style: none;
+
+  ul {
+    padding-left: 15px;
+    padding-bottom: 5px;
+    list-style: none;
+  }
+
+  a {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 2px;
+    font-size: 18px;
+    letter-spacing: -.03em;
+    line-height: 26px;
+    text-align: left;
+    color: #284f69;
+    transition: opacity .3s;
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  > li {
+
+    > a {
+      font-weight: 700;
+
+      span {
+        font-weight: 400;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: -15px;
+        width: 8px;
+        height: 8px;
+        background-image: url(../img/svg/icon-arrow-title-menu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    > ul {
+
+      > li {
+
+        > a {
+          font-weight: 700;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 14px;
+            right: -15px;
+            width: 8px;
+            height: 8px;
+            background-image: url(../img/svg/icon-arrow-title-menu.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+
+        > ul {
+
+          > li {
+
+            > a {
+              font-weight: 500;
+
+              &::after {
+                content: "";
+                position: absolute;
+                top: 14px;
+                right: -15px;
+                width: 8px;
+                height: 8px;
+                background-image: url(../img/svg/icon-arrow-title-menu.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
+            }
+
+            li {
+              padding-left: 15px;
+
+              a {
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  top: 10px;
+                  left: -20px;
+                  width: 18px;
+                  height: 8px;
+                  background-image: url(../img/svg/icon-feather-arrow-right.svg);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

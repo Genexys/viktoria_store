@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <include src="src/html/base/head.html"></include>
+  <title>Виктория - Шины</title>
+
+</head>
+<body>
+
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<div class="wrapper">
+  <include src="src/html/components/top-inform-block.html"></include>
+  <include src="src/html/components/search-block.html"></include>
+  <include src="src/html/base/header.html"></include>
+  <include src="src/html/components/title-product-filter.html"></include>
+
+  <main class="main-content">
+    <div class="container">
+      <include src="src/html/components/breadcrumbs.html"></include>
+
+      <h1 class="section-title section-title--left">Отзывы</h1>
+
+      <ul class="list-reviews">
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+        <li class="list-reviews__item">
+          <include src="src/html/components/review-card.html"></include>
+        </li>
+      </ul>
+
+      <include src="src/html/components/paginator.html"></include>
+
+      <div class="page-review-form">
+        <div class="section-title section-title--left">оставить отзыв</div>
+
+        <form action="" class="form-review">
+          <div class="input-wrapper form-review__field">
+            <input type="text" name="name" placeholder="Имя" class="form-review__input">
+          </div>
+          <div class="form-review__rating">
+            <span>Оценка</span>
+            <div class="star-rating star-rating--form" data-rating>
+              <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+              <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+              <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+              <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+              <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+            </div>
+          </div>
+          <div class="input-wrapper form-review__textarea">
+            <textarea name="text" id="text-review" placeholder="Отзыв"></textarea>
+          </div>
+          <button class="main-btn form-review__btn" type="submit">Опубликовать</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <include src="src/html/base/footer.html"></include>
+
+
+  <div id="preloader" class="preloader">
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.0/js/standalone/selectize.min.js" integrity="sha512-WIqmTz2P0Ei2a6Fu5gEe7rXo0cyvpLHGKcOWLkqmZSREr8AjblAQSFYt+T/dgYyPz4+alSHpLS0XkezN4VpsLg==" crossorigin="anonymous"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

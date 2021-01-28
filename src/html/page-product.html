@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <include src="src/html/base/head.html"></include>
+  <title>Виктория - Шины</title>
+
+</head>
+<body>
+
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<div class="wrapper">
+  <include src="src/html/components/top-inform-block.html"></include>
+<!--  <include src="src/html/components/search-block.html"></include>-->
+  <include src="src/html/base/header.html"></include>
+  <include src="src/html/components/title-product-filter.html"></include>
+
+  <main class="main-content">
+    <div class="container">
+      <include src="src/html/components/breadcrumbs.html"></include>
+      <div class="product-page">
+        <div class="info-product-wrapper">
+          <div class="product-img-wrapper">
+            <div class="product-img-block">
+              <figure class="product-img" data-scale="2">
+                <img src="img/content/product-img-1.jpg" alt="">
+              </figure>
+              <svg width="14" height="14" class="product-img-magnifier"><use xlink:href="#icon-magnifier"></use></svg>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-info__top">
+              <div class="product-info__name">
+                Легковая шина BRIDGESTONE BluEarth
+                <span class="product-info__name-spec">ES32 195/60 R15 88H</span>
+              </div>
+              <span class="product-info__vendor-code">Код товара: B00JPCII9Y </span>
+            </div>
+            <div class="product-info__left">
+              <div class="product-info__spec-wrapper">
+                <div class="product-info__img-company">
+                  <img src="img/content/brand-1.png" alt="">
+                </div>
+
+                <div class="product-info__weather">
+                  <svg width="60" height="22">
+                    <use xlink:href="#icon-summer-weather"></use>
+                  </svg>
+                </div>
+
+                <div class="product-info__spec">
+                  <table class="spec-block">
+                    <tr>
+                      <td>Сезонность:</td>
+                      <td>Зима</td>
+                    </tr>
+                    <tr>
+                      <td>Индекс скорости:</td>
+                      <td>T (до 190 км/ч)</td>
+                    </tr>
+                    <tr>
+                      <td>Индекс нагрузки:</td>
+                      <td>88 (до 560 кг)
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Камера:</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>Шипы:</td>
+                      <td>да</td>
+                    </tr>
+                  </table>
+                </div>
+
+                <div class="product-info__availability">
+                  <span class="product-info__availability-text">Наличие</span>
+                  <table class="availability-block">
+                    <tr>
+                      <td>Белореченск</td>
+                      <td>много</td>
+                    </tr>
+                    <tr>
+                      <td>Дагомыс</td>
+                      <td>много</td>
+                    </tr>
+                    <tr>
+                      <td>Адлер</td>
+                      <td>20</td>
+                    </tr>
+                    <tr class="few">
+                      <td>Сочи</td>
+                      <td>3</td>
+                    </tr>
+                    <tr class="not-available">
+                      <td>Краснодар</td>
+                      <td>нет</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="product-info__price-block price-block-product">
+              <div class="price-block-product__top">
+                <div class="price-block-product__rating">
+                  <div class="product-rating">
+                    <div class="product-rating__icon">
+                      <svg width="17" height="16">
+                        <use xlink:href="#icon-star"></use>
+                      </svg>
+                    </div>
+                    <span class="product-rating__num">
+                        <span class="product-rating__rating-number">4.5</span>
+                        <span class="product-rating__count">(15)</span>
+                      </span>
+                  </div>
+                </div>
+                <div class="price-block-product__reviews">
+                  <div class="product-review">
+                    <div class="product-review__icon">
+                      <svg width="15" height="15">
+                        <use xlink:href="#icon-message-square"></use>
+                      </svg>
+                    </div>
+                    <span class="product-review__text">Отзывы</span>
+                    <span class="product-review__count">(15)</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="price-block-product__price-card price-card">
+                <div class="price-card__wrapper">
+                  <div class="price-card__price">
+                    <span class="price-text">Цена/шт:</span>
+                    <span class="price-num">7000.00 <i>Р</i></span>
+                  </div>
+                  <div class="price-card__quantity">
+                    <span class="quantity-text">За 4 шт:</span>
+                    <span class="quantity-price">46 000 р</span>
+                  </div>
+                </div>
+                <div class="price-card__button-add button-add">
+                  <div class="button-add__quantity">
+                    <div class="button-add__step-quantity">
+                      <button type="button" class="quantity-inc">
+                        <svg width="5" height="3">
+                          <use xlink:href="#icon-arrow-quantity"></use>
+                        </svg>
+                      </button>
+                      <button type="button" class="quantity-dec">
+                        <svg width="5" height="3">
+                          <use xlink:href="#icon-arrow-quantity"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <input type="text" value="1" class="button-add__quantity-input">
+                  </div>
+                  <button class="button-add__btn">
+                    <svg width="15" height="15">
+                      <use xlink:href="#icon-cross-buy-button"></use>
+                    </svg>
+                    <span>купить</span></button>
+                </div>
+
+                <div class="price-card__one-click">
+                  <a href="" class="price-card__link">
+                    Купить в 1 клик
+                  </a>
+                </div>
+              </div>
+
+              <div class="price-block-product__favorite">
+                <svg width="7" height="10">
+                  <use xlink:href="#icon-bookmark"></use>
+                </svg>
+                <a href="">в избранное</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-tab-description">
+          <div class="product-tab-description__tabs" role="tablist" aria-label="Информация о товаре">
+            <div class="product-tab-description__tabs-inner">
+              <button class="product-tab-description__tab-item product-tab-description__tab-item--active"
+                      role="tab"
+                      aria-selected="true"
+                      aria-controls="product-description"
+                      id="product-description"
+              >
+                Описание
+              </button>
+              <button class="product-tab-description__tab-item"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="product-warranty"
+                      id="product-warranty"
+                      tabindex="-1"
+              >
+                Гарантия
+              </button>
+              <button class="product-tab-description__tab-item"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="product-compatibility"
+                      id="product-compatibility"
+                      tabindex="-1"
+              >
+                Совместимость
+              </button>
+              <button class="product-tab-description__tab-item"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="product-reviews"
+                      id="product-reviews"
+                      tabindex="-1"
+              >
+                Отзывы <span>(1)</span></button>
+              <button class="product-tab-description__tab-item"
+                      role="tab"
+                      aria-selected="false"
+                      aria-controls="product-paid-delivery"
+                      id="product-paid-delivery"
+                      tabindex="-1"
+              >
+                Доставка и оплата
+              </button>
+            </div>
+          </div>
+          <div class="product-tab-description__tab-content">
+            <div class="tab-content-item tab-content-item--active"
+                 tabindex="0"
+                 role="tabpanel"
+                 id="product-description-tab"
+                 aria-labelledby="product-description">
+              <include src="src/html/components/description-product.html"></include>
+            </div>
+            <div class="tab-content-item"
+                 tabindex="0"
+                 role="tabpanel"
+                 id="product-warranty-tab"
+                 aria-labelledby="product-warranty">
+              <include src="src/html/components/warranty-block.html"></include>
+            </div>
+            <div class="tab-content-item"
+                 tabindex="0"
+                 role="tabpanel"
+                 id="product-compatibility-tab"
+                 aria-labelledby="product-compatibility">
+              <include src="src/html/components/product-compatibility.html"></include>
+            </div>
+            <div class="tab-content-item"
+                 tabindex="0"
+                 role="tabpanel"
+                 id="product-reviews-tab"
+                 aria-labelledby="product-reviews">
+              <include src="src/html/components/product-review.html"></include>
+            </div>
+            <div class="tab-content-item"
+                 tabindex="0"
+                 role="tabpanel"
+                 id="product-paid-delivery-tab"
+                 aria-labelledby="product-paid-delivery">
+              <include src="src/html/components/main-page-text-without-container.html"></include>
+            </div>
+          </div>
+        </div>
+        <include src="src/html/components/section-goods-similar.html"></include>
+        <include src="src/html/components/main-page-text-without-container.html"></include>
+      </div>
+    </div>
+  </main>
+
+  <include src="src/html/base/footer.html"></include>
+
+
+  <div id="preloader" class="preloader">
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.0/js/standalone/selectize.min.js" integrity="sha512-WIqmTz2P0Ei2a6Fu5gEe7rXo0cyvpLHGKcOWLkqmZSREr8AjblAQSFYt+T/dgYyPz4+alSHpLS0XkezN4VpsLg==" crossorigin="anonymous"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

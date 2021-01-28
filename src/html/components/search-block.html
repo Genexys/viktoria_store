@@ -1,4 +1,5 @@
-<div class="search-block search-block--collapse">
+<link rel="stylesheet" href="../../style/components/section-text-page.scss">
+<div class="search-block search-block--main">
   <div class="container search-block__wrapper">
     <figure class="search-block__logo">
       <img src="img/svg/main-logo-white.svg" alt="Виктория" title="Виктория">
@@ -10,7 +11,7 @@
 
     <div class="search-block__city">
       <form action="">
-        <select name="" id="" class="search-block__city-select">
+        <select class="custom-select search-block__city-select">
           <option value="Сочи">Сочи</option>
           <option value="Багдад">Багдад</option>
           <option value="Конго">Конго</option>
@@ -22,47 +23,50 @@
       <span class="search-form__text">Подобрать</span>
 
       <div class="search-form__type">
-        <select class="custom-select" name="type" id="type">
-          <option value="шины">шины</option>
-          <option value="диски">диски</option>
-          <option value="аккумуляторы">аккумуляторы</option>
+        <select class="custom-select-search" name="type" id="type">
+          <option value="tires"><span>шины</span></option>
+          <option value="rims"><span>диски</span></option>
+          <option value="accum"><span>аккумуляторы</span></option>
         </select>
 
         <div class="select-type">
-          <button type="button" data-type-select="диски">диски</button>,
-          <button type="button" data-type-select="аккумуляторы">аккумуляторы</button>
+          <button type="button" data-type-select="rims">диски</button>,
+          <button type="button" data-type-select="accum">аккумуляторы</button>
         </div>
       </div>
 
       <span class="search-form__text">для</span>
 
-      <select class="custom-select" name="mark" id="mark">
-        <option data-placeholder="true">Марка</option>
-        <option value="Киа">Киа</option>
-        <option value="Мерс">Мерс</option>
-        <option value="Жигуль">Жигуль</option>
-      </select>
+      <div class="search-form__wrapper-spec">
 
-      <select class="custom-select" name="model" id="model">
-        <option data-placeholder="true">Модель</option>
-        <option value="т1000">т1000</option>
-        <option value="т800">т800</option>
-        <option value="1408">1408</option>
-      </select>
+        <select class="custom-select-search" name="mark" id="mark" data-placeholder="Марка">
+          <option></option>
+          <option value="Киа">Киа</option>
+          <option value="Мерс">Мерс</option>
+          <option value="Жигуль">Жигуль</option>
+        </select>
 
-      <select class="custom-select" name="year" id="year">
-        <option data-placeholder="true">Год</option>
-        <option value="1920">1920</option>
-        <option value="1950">1950</option>
-        <option value="666">666</option>
-      </select>
+        <select class="custom-select-search" name="model" id="model" data-placeholder="Модель">
+          <option></option>
+          <option value="т1000">т1000</option>
+          <option value="т800">т800</option>
+          <option value="1408">1408</option>
+        </select>
 
-      <select class="custom-select" name="modification" id="modification">
-        <option data-placeholder="true">Модификация</option>
-        <option value="С крыльями">С крыльями</option>
-        <option value="Без дверей">Без дверей</option>
-        <option value="Потоковый накопитель">Потоковый накопитель</option>
-      </select>
+        <select class="custom-select-search" name="year" id="year" data-placeholder="Год">
+          <option></option>
+          <option value="1920">1920</option>
+          <option value="1950">1950</option>
+          <option value="666">666</option>
+        </select>
+
+        <select class="custom-select-search" name="modification" id="modification" data-placeholder="Модификация">
+          <option></option>
+          <option value="С крыльями">С крыльями</option>
+          <option value="Без дверей">Без дверей</option>
+          <option value="Потоковый накопитель">Потоковый накопитель</option>
+        </select>
+      </div>
 
       <button class="search-form__btn" type="submit" aria-label="Найти"><svg width="20" height="20"><use xlink:href="#icon-arrow-button"></use></svg></button>
 

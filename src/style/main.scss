@@ -9,6 +9,8 @@
 
 @import "vendor/slimselect";
 
+@import "vendor/jquery.fancybox.min";
+
 // Global
 //---------------------------------
 
@@ -29,6 +31,8 @@
 //-------
 @import "components/main-nav";
 
+@import "components/second-nav";
+
 @import "components/basket-block";
 
 @import "components/custom-select";
@@ -43,7 +47,41 @@
 
 @import "components/goods-cart";
 
-@import "components/articles-list";
+@import "components/main-articles-list";
+
+@import "components/range-filter-block";
+
+@import "components/radio-block";
+
+@import "components/checkbox-block";
+
+@import "components/standart-size";
+
+@import "components/sorting-block";
+
+@import "components/paginator";
+
+@import "components/section-text-page";
+
+@import "components/breadcrumbs";
+
+@import "components/product-tab";
+
+@import "components/product-description";
+
+@import "components/product-promotion-block";
+
+@import "components/warranty-block";
+
+@import "components/product-compatibility";
+
+@import "components/review-card";
+
+@import "components/star-rating";
+
+@import "components/form-review";
+
+@import "components/article-list-item";
 
 //
 // blocks
@@ -54,6 +92,8 @@
 
 @import "blocks/search-block";
 
+@import "blocks/title-product-filter";
+
 @import "blocks/brands-block";
 
 @import "blocks/main-articles-block";
@@ -61,5 +101,31 @@
 @import "blocks/main-page-text";
 
 @import "blocks/category-main-block";
+
+@import "blocks/filter-block";
+
+@import "blocks/product-list-page";
+
+@import "blocks/product-page";
+
+@import "blocks/article-list-page";
+
+@import "blocks/article-block";
+
+@import "blocks/main-brand-list";
+
+@import "blocks/faq";
+
+@import "blocks/certificate-page";
+
+@import "blocks/page-reviews";
+
+@import "blocks/map";
+
+@import "blocks/page-contacts";
+
+@import "blocks/form-feedback";
+
+@import "blocks/site-map";
 
 @import "blocks/footer";

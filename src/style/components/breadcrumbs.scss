@@ -1,0 +1,35 @@
+.breadcrumb {
+  display: flex;
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-of-type) {
+
+      &::after {
+        content: "> ";
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 2px;
+        font-size: 12px;
+        line-height: 21px;
+        text-align: left;
+        color: #178cf8;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 21px;
+    text-align: left;
+    color: #178cf8;
+
+    &[aria-current="page"] {
+      color: #5d5d64;
+    }
+  }
+}

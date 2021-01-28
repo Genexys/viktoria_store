@@ -1,16 +1,24 @@
 <header class="header">
   <div class="container">
     <div class="header__top">
-      <figure class="header__logo">
-        <img src="img/svg/main-logo.svg" alt="Виктория" title="Виктория">
+      <a href="">
+        <figure class="header__logo">
+          <img src="img/svg/main-logo.svg" alt="Виктория" title="Виктория">
 
-        <figcaption>
-          <span>интернет магазин шин</span>
-        </figcaption>
+          <figcaption>
+            <span>интернет магазин шин</span>
+          </figcaption>
+      </a>
       </figure>
 
       <div class="header__cart">
-        <div class="basket-block">
+
+        <a href="" class="header__fav-count header__fav-count--active">
+          <svg width="6" height="10" ><use xlink:href="#icon-bookmark"></use></svg>
+          <span class="fav-count">4</span>
+        </a>
+
+        <div class="basket-block basket-block--active">
           <svg width="16" height="15" class='basket-block__icon'>
             <use xlink:href="#icon-basket">
 
@@ -18,10 +26,19 @@
           </svg>
 
           <div class="basket-block__wrapper">
+
+            <!--- когда в корзине ничего нет -->
+
+<!--            <div class="basket-block__count">-->
+<!--              <span class="basket-block__num">—</span>-->
+<!--              <i class="basket-block__divider">|</i>-->
+<!--              <span class="basket-block__sum">———</span>-->
+<!--            </div>            -->
+
             <div class="basket-block__count">
-              <span class="basket-block__num">—</span>
-              <i>|</i>
-              <span class="basket-block__sum">———</span>
+              <span class="basket-block__num">4</span>
+              <i class="basket-block__divider">|</i>
+              <span class="basket-block__sum">29999999 р</span>
             </div>
 
             <a href="" class="basket-block__btn">корзина</a>
@@ -30,14 +47,24 @@
       </div>
     </div>
     <div class="header__bottom">
-      <nav class="main-nav">
+      <button type="button" class="header__mobile-button"
+              aria-expanded="false"
+              aria-controls="main-nav"
+              aria-label="кнопка меню">
+          <span class="hamburger-wrapper">
+            <span class="hamburger-inner">
+            </span>
+          </span>
+      </button>
+
+      <nav id="main-nav" class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><span class="main-nav__link"><svg width="14" height="12"><use xlink:href="#icon-home"></use></svg></span></li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a href="" class="main-nav__link">шины</a>
 
             <ul class="main-nav__sub-list">
-              <li class="main-nav__sub-item main-nav__sub-item--active"><a href="">Зимние</a></li>
+              <li class="main-nav__sub-item main-nav__sub-item--active"><span >Зимние</span></li>
               <li class="main-nav__sub-item"><a href="">Летние</a></li>
               <li class="main-nav__sub-item"><a href="">Всесезонные</a></li>
               <li class="main-nav__sub-item"><a href="">Для грузовых авто</a></li>

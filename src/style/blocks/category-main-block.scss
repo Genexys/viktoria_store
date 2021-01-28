@@ -24,7 +24,7 @@
     height: 76px;
     padding: 0 23px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
 
     &:hover {
@@ -39,14 +39,17 @@
 
     &--tires {
       background-color: #9c2a20;
+      background-image: url("../img/content/mini-banner-category-tires.png");
     }
 
     &--disk {
       background-color: #083c50;
+      background-image: url("../img/content/mini-banner-category-disc.png");
     }
 
     &--accum {
       background-color: #317795;
+      background-image: url("../img/content/mini-banner-category-acc.png");
     }
   }
 

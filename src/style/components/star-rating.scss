@@ -1,0 +1,36 @@
+.star-rating {
+  display: flex;
+
+  &__item {
+
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
+
+    svg {
+      fill: #adadad;
+      transition: fill .3s;
+    }
+
+    &--active {
+
+      svg {
+        fill: #b39c34;
+      }
+    }
+  }
+
+  &--form {
+
+    .star-rating__item {
+      cursor: pointer;
+
+      svg {
+
+        &:hover {
+          fill: #b39c34;
+        }
+      }
+    }
+  }
+}

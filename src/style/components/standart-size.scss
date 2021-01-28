@@ -1,0 +1,27 @@
+.select-type-filter-item {
+  position: relative;
+  display: inline-block;
+  height: 19px;
+  padding: 0 25px 0 5px;
+  border-radius: 4px;
+  background-color: #d8d8d8;
+  font-family: "OpenSans", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 19px;
+  text-align: left;
+  color: #2e2e2e;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 8px;
+    height: 8px;
+    background-image: url("../img/svg/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -12,6 +12,7 @@ const del = require(`del`);
 const uglify = require(`gulp-uglify`);
 const concat = require(`gulp-concat`);
 const postHtml = require(`gulp-posthtml`);
+const expressions = require(`posthtml-expressions`);
 const include = require(`posthtml-include`);
 const webp = require(`gulp-webp`);
 const imagemin = require(`gulp-imagemin`);
@@ -24,6 +25,7 @@ gulp.task(`html`, function() {
   return gulp.src(`src/html/*.html`)
     .pipe(postHtml([
       include(),
+      expressions({}),
     ]))
     .pipe(gulp.dest(`build`));
 });

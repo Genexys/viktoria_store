@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <include src="src/html/base/head.html"></include>
+  <title>Виктория - Шины</title>
+
+</head>
+<body>
+
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<div class="wrapper">
+  <include src="src/html/components/top-inform-block.html"></include>
+  <include src="src/html/components/search-block.html"></include>
+  <include src="src/html/base/header.html"></include>
+  <include src="src/html/components/title-product-filter.html"></include>
+
+  <main class="main-content">
+    <div class="container">
+      <include src="src/html/components/breadcrumbs.html"></include>
+
+      <h1 class="section-title section-title--left">Акции и статьи</h1>
+
+      <ul class="articles-list">
+        <li class="articles-list__item">
+          <a href="">
+            <include src="src/html/components/article-item.html"></include>
+          </a>
+        </li>
+        <li class="articles-list__item">
+          <a href="">
+            <include src="src/html/components/article-item-promotion.html"></include>
+          </a>
+        </li>
+        <li class="articles-list__item">
+          <a href="">
+            <include src="src/html/components/article-item.html"></include>
+          </a>
+        </li>
+        <li class="articles-list__item">
+          <a href="">
+            <include src="src/html/components/article-item-promotion.html"></include>
+          </a>
+        </li>
+      </ul>
+
+      <include src="src/html/components/paginator.html"></include>
+    </div>
+  </main>
+
+  <include src="src/html/base/footer.html"></include>
+
+
+  <div id="preloader" class="preloader">
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.0/js/standalone/selectize.min.js" integrity="sha512-WIqmTz2P0Ei2a6Fu5gEe7rXo0cyvpLHGKcOWLkqmZSREr8AjblAQSFYt+T/dgYyPz4+alSHpLS0XkezN4VpsLg==" crossorigin="anonymous"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

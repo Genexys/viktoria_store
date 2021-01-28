@@ -1,5 +1,15 @@
 @font-face {
   font-style: normal;
+  font-weight: 300;
+  font-family: "OpenSans";
+
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light/OpenSans-Light.woff2") format("woff2"),
+    url("../fonts/OpenSans-Light/OpenSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 400;
   font-family: "OpenSans";
 

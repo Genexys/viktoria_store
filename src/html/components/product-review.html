@@ -1,0 +1,32 @@
+<div class="product-block-review">
+  <ul class="product-block-review__list">
+    <li class="product-block-review__item">
+      <include src="src/html/components/review-card.html"></include>
+    </li>
+    <li class="product-block-review__item">
+      <include src="src/html/components/review-card.html"></include>
+    </li>
+  </ul>
+
+  <div class="product-list-review__form">
+    <form action="" class="form-review">
+      <div class="input-wrapper form-review__field">
+        <input type="text" name="name" placeholder="Имя" class="form-review__input">
+      </div>
+      <div class="form-review__rating">
+        <span>Оценка</span>
+        <div class="star-rating star-rating--form" data-rating>
+          <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+          <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+          <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+          <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+          <div class="star-rating__item"><svg width="17" height="16"><use xlink:href="#icon-star"></use></svg></div>
+        </div>
+      </div>
+      <div class="input-wrapper form-review__textarea">
+        <textarea name="text" id="text-review" placeholder="Отзыв"></textarea>
+      </div>
+      <button class="main-btn form-review__btn" type="submit">Опубликовать</button>
+    </form>
+  </div>
+</div>

@@ -4,6 +4,27 @@
   flex-direction: column;
   border: 1px solid #a4e1fd;
 
+  &__fav {
+    position: absolute;
+    top: -1px;
+    right: 15px;
+    z-index: 1;
+    width: 6px;
+    height: 10px;
+    display: flex;
+
+    svg {
+      fill: #e3e3e3;
+    }
+
+    &--active {
+
+      svg {
+        fill: var(--orangeColor);
+      }
+    }
+  }
+
   &__weather-icon {
     position: absolute;
     top: 14px;
@@ -70,7 +91,7 @@
     font-size: 18px;
     line-height: 21px;
     text-align: left;
-    color: #f45a40;
+    color: var(--orangeColor);
     transition: border-top-color .3s, font-size .3s, color .3s;
   }
 

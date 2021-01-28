@@ -41,6 +41,10 @@
     &--prev {
       left: 80px;
 
+      @media screen and (max-width: 1024px - 1) {
+        left: 20px;
+      }
+
       &::after {
         transform: rotate(180deg);
       }
@@ -48,6 +52,10 @@
 
     &--next {
       right: 80px;
+
+      @media screen and (max-width: 1024px - 1) {
+        right: 20px;
+      }
     }
   }
 }

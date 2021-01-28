@@ -15,6 +15,10 @@
     border: 1px solid #ddd;
     transition: border-color .3s;
 
+    a {
+      display: flex;
+    }
+
     img {
       transition: opacity .3s;
     }

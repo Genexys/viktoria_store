@@ -1,5 +1,5 @@
-import Swiper, { Navigation } from 'swiper';
-Swiper.use([Navigation]);
+import Swiper, { Navigation, Pagination, } from 'swiper';
+Swiper.use([Navigation, Pagination,]);
 
 const mainSlider = () => {
   const mainSlider = new Swiper('.main-slider__container', {
@@ -15,6 +15,10 @@ const mainSlider = () => {
     navigation: {
       nextEl: '.main-slider__button--next',
       prevEl: '.main-slider__button--prev',
+    },
+
+    pagination: {
+      el: '.main-slider__pagination',
     },
   })
 }

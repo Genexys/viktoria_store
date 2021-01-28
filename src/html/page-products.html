@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <include src="src/html/base/head.html"></include>
+  <title>Виктория - Шины</title>
+
+</head>
+<body>
+
+<div style="display: none;">
+  <include src="build/img/sprite_auto.svg"></include>
+</div>
+
+<div class="wrapper">
+  <include src="src/html/components/top-inform-block.html"></include>
+  <include src="src/html/components/search-block.html"></include>
+  <include src="src/html/base/header.html"></include>
+  <include src="src/html/components/title-product-filter.html"></include>
+
+  <div class="main-content-wrapper">
+    <div class="container main-content-inner">
+
+      <aside class="filter-block">
+        <button class="filter-block__open">фильтр</button>
+        <div class="filter-block__wrapper">
+          <form class="filter-form">
+            <div class="filter-form__item range-block">
+              <div class="filter-top"><span class="filter-name">Цена</span>
+                <button type="button" class="clear-filter-btn">(очистить)</button>
+              </div>
+              <div class="range-input">
+                <input type="text" class="filter-input js-input-from range-input-min">
+                <i>—</i>
+                <input type="text" class="filter-input js-input-to range-input-max">
+              </div>
+
+              <div class="range-slider">
+                <input type="range" class="js-range-slider" name="range-filter">
+              </div>
+            </div>
+
+            <div class="filter-form__item availability">
+              <div class="filter-top filter-top__active"><span class="filter-name">Наличие</span>
+                <button type="button" class="clear-filter-btn">(очистить)</button>
+              </div>
+
+              <div class="radio-block">
+                <label class="radio-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="radio" name="availability" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="radio-label">
+                  <span class="radio-label__text">Любое</span>
+                </span>
+                </label>
+
+                <label class="radio-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="radio" checked name="availability" value="2">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="radio-label">
+                  <span class="radio-label__text">В наличии</span>
+                </span>
+                </label>
+
+                <label class="radio-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="radio" name="availability" value="3">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="radio-label">
+                  <span class="radio-label__text">Сочи</span>
+                </span>
+                </label>
+
+                <label class="radio-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="radio" name="availability" value="4">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="radio-label">
+                  <span class="radio-label__text">Краснодар</span>
+                </span>
+                </label>
+
+                <label class="radio-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="radio" name="availability" value="5">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="radio-label">
+                  <span class="radio-label__text">Дагомыс</span>
+                </span>
+                </label>
+
+                <label class="radio-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="radio" name="availability" value="6">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="radio-label">
+                  <span class="radio-label__text">Белореченск</span>
+                </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-form__item standard-size">
+              <div class="filter-top filter-top__active"><span class="filter-name">Типоразмер</span>
+                <button type="button" class="clear-filter-btn">(очистить)</button>
+              </div>
+              <div class="select-type-filter__staff">
+                <span class="title-size">Штатный</span>
+                <div class="select-type-filter-list">
+                  <div class="select-type-filter-item">205/55 R16</div>
+                  <div class="select-type-filter-item">205/55 R16</div>
+                </div>
+              </div>
+              <div class="standard-size__permissible">
+                <span class="title-size">Допустимый</span>
+                <div class="permissible-list">
+                  <div class="select-type-filter-item">205/55 R18</div>
+                  <div class="select-type-filter-item">205/55 R19</div>
+                  <div class="select-type-filter-item">205/55 R20</div>
+                </div>
+              </div>
+
+              <div class="block-with-collapsed">
+                <button type="button" class="block-with-collapsed__btn"><span>Показать все</span>
+                  <svg width="6" height="9">
+                    <use xlink:href="#icon-simple-arrow"></use>
+                  </svg>
+                </button>
+
+                <div class="block-with-collapsed__collapse checkbox-wrapper checkbox-wrapper--search">
+                  <input type="text" placeholder="Найти" class="filter-input checkbox-wrapper__input-search">
+
+                  <div class="checkbox-block">
+
+                    <label class="checkbox-item">
+                      <span class="input-box">
+                        <input class="input-box__input" type="checkbox" name="manufacturer-1" value="1">
+                        <span class="input-box__checkmark"></span>
+                      </span>
+                      <span class="checkbox-label">
+                        <span class="checkbox-label__text">Amtel</span>
+                      </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-2" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-3" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-3" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">205/55 R16</span>
+                </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-form__item checkbox-wrapper">
+              <div class="filter-top"><span class="filter-name">Сезонность</span>
+                <button type="button" class="clear-filter-btn">(очистить)</button>
+              </div>
+
+              <div class="checkbox-block">
+                <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="seasons" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="checkbox-label">
+                  <span class="checkbox-label__text">Лето</span>
+                </span>
+                </label>
+                <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="seasons" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="checkbox-label">
+                  <span class="checkbox-label__text">Зима</span>
+                </span>
+                </label>
+                <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="seasons" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="checkbox-label">
+                  <span class="checkbox-label__text">Мультисезон</span>
+                </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="filter-form__item block-with-collapsed">
+
+              <div class="checkbox-wrapper checkbox-wrapper--search">
+                <div class="filter-top"><span class="filter-name">Производитель</span>
+                  <button type="button" class="clear-filter-btn">(очистить)</button>
+                </div>
+
+                <button type="button" class="block-with-collapsed__btn">
+                  <span>Показать все</span>
+                  <svg width="6" height="9">
+                    <use xlink:href="#icon-simple-arrow"></use>
+                  </svg>
+                </button>
+
+                <div class="block-with-collapsed__collapse block-with-collapsed__collapse--open">
+                  <input type="text" placeholder="Найти" class="filter-input checkbox-wrapper__input-search">
+                  <div class="checkbox-block">
+                    <label class="checkbox-item">
+                    <span class="input-box">
+                      <input class="input-box__input" type="checkbox" name="manufacturer-1" value="1">
+                      <span class="input-box__checkmark"></span>
+                    </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Amtel</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-2" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">ATTURO</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-3" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Bridgestone</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-3" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Dunlop</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Hankook</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">NITTO</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Tigar</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Kumho</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Tigar</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Kumho</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Tigar</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Kumho</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Tigar</span>
+                </span>
+                    </label>
+
+                    <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="manufacturer-4" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                      <span class="checkbox-label">
+                  <span class="checkbox-label__text">Kumho</span>
+                </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-form__item checkbox-wrapper">
+              <div class="filter-top"><span class="filter-name">Дополнительно</span>
+                <button type="button" class="clear-filter-btn">(очистить)</button>
+              </div>
+
+              <div class="checkbox-block">
+                <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="seasons" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="checkbox-label">
+                  <span class="checkbox-label__text">Run Flat</span>
+                </span>
+                </label>
+                <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="seasons" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="checkbox-label">
+                  <span class="checkbox-label__text">Off Road</span>
+                </span>
+                </label>
+                <label class="checkbox-item">
+                <span class="input-box">
+                  <input class="input-box__input" type="checkbox" name="seasons" value="1">
+                  <span class="input-box__checkmark"></span>
+                </span>
+                  <span class="checkbox-label">
+                  <span class="checkbox-label__text">Распродажа</span>
+                </span>
+                </label>
+              </div>
+            </div>
+
+
+            <div class="filter-form__bottom">
+              <button class="filter-form__submit">показать</button>
+              <button type="button" class="filter-form__clear">очистить все</button>
+            </div>
+          </form>
+        </div>
+
+      </aside>
+      <main class="main-content">
+        <div class="top-product-list">
+          <div class="sorting-block">
+            <span class="sorting-block__text">Сортировать</span>
+            <select name="" id="" class="custom-select sorting-block__select">
+              <option value="По популярности">По популярности</option>
+              <option value="По цене">По цене</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="product-list-wrapper">
+          <ul class="product-list">
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav goods-card__fav--active">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav goods-card__fav--active">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav goods-card__fav--active">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="product-list__item">
+              <a href="" class="product-list__link">
+                <div class="goods-card">
+                  <div class="goods-card__fav">
+                    <svg width="6" height="10">
+                      <use xlink:href="#icon-bookmark"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__weather-icon">
+                    <svg width="62" height="22">
+                      <use xlink:href="#icon-summer-weather"></use>
+                    </svg>
+                  </div>
+                  <div class="goods-card__img">
+                    <img src="img/content/good-1.jpg" alt="">
+                  </div>
+                  <div class="goods-card__content">
+                    <span class="goods-card__type">ШИНЫ</span>
+                    <span class="goods-card__name">Forceum OCTA</span>
+                    <div class="goods-card__spec">195/65R15 H Летние</div>
+                    <div class="goods-card__price">
+                      <span class="goods-card__old-price">1950 Р</span>
+                      <span class="goods-card__current-price goods-card__current-price--special">1950 Р</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <include src="src/html/components/paginator.html"></include>
+        </div>
+
+        <section class="section-text-page">
+          <h3>SEO MESSAGE OR ANY TEXT/HTML</h3>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur</p>
+          <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro</p>
+
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <include src="src/html/base/footer.html"></include>
+
+
+  <div id="preloader" class="preloader">
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.13.0/js/standalone/selectize.min.js" integrity="sha512-WIqmTz2P0Ei2a6Fu5gEe7rXo0cyvpLHGKcOWLkqmZSREr8AjblAQSFYt+T/dgYyPz4+alSHpLS0XkezN4VpsLg==" crossorigin="anonymous"></script>
+<script src="js/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>

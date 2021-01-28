@@ -1,0 +1,62 @@
+.range-block {
+
+  .range-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      width: 100%;
+    }
+
+    i {
+      padding: 0 12px;
+      font-size: 12px;
+      color: var(--grayDarkColor);
+    }
+  }
+
+  .irs {
+
+    .irs-line {
+      height: 5px;
+      border-radius: 0;
+      background-color: #cccccc;
+      color: var(--grayDarkColor);
+    }
+
+    &--flat {
+
+      .irs-min,
+      .irs-max {
+        top: 10px;
+        background-color: transparent;
+      }
+
+      .irs-bar {
+        height: 5px;
+        background-color: var(--darkBlueMainColor);
+      }
+
+      .irs-handle {
+
+        & > i {
+
+          &:first-child {
+            top: 2px;
+            left: 4px;
+            width: 5px;
+            height: 16px;
+            background-color: transparent;
+            background-image: url("../img/svg/icon-handle-range.svg");
+            background-repeat: no-repeat;
+          }
+        }
+
+        &.to {
+          transform: scale(-1, 1);
+        }
+      }
+    }
+  }
+}
