@@ -5321,6 +5321,89 @@ input[type="radio"].visually-hidden {
       height: 8px;
       content: ""; }
 
+.error-page {
+  background-color: #083c50;
+  background-color: var(--darkBlueMainColor);
+  height: 100vh; }
+  @media screen and (max-width: 600px) {
+    .error-page {
+      height: auto; } }
+  .error-page__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; }
+    @media screen and (max-width: 600px) {
+      .error-page__wrapper {
+        height: auto; } }
+  .error-page__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 25px;
+    color: #fff; }
+    .error-page__logo img {
+      margin-bottom: 33px; }
+      @media screen and (max-width: 600px) {
+        .error-page__logo img {
+          margin-bottom: 10px; } }
+  .error-page__error-block {
+    margin-bottom: 50px; }
+  .error-page__error-num {
+    display: block;
+    opacity: .1;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 73px;
+    line-height: 1.1;
+    text-align: center; }
+  .error-page__error-text {
+    color: #f9f9f9;
+    font-size: 14px;
+    line-height: 13px;
+    letter-spacing: .03em;
+    text-align: center;
+    text-transform: uppercase; }
+  .error-page__catalog {
+    border: 1px dashed #366070;
+    border-image: url("../img/svg/border-dashed.svg");
+    border-image-slice: 11;
+    border-image-width: 10px 10px;
+    padding: 30px 55px; }
+    @media screen and (max-width: 600px) {
+      .error-page__catalog {
+        padding: 30px 20px; } }
+  .error-page__catalog-text {
+    margin-bottom: 10px;
+    color: #f9f9f9;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 13px;
+    font-family: MyriadPro, sans-serif;
+    letter-spacing: .03em;
+    text-align: center;
+    text-transform: uppercase; }
+  .error-page__catalog-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+  .error-page__catalog-link {
+    transition: opacity .3s;
+    color: #2fa4db;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14.4px;
+    font-family: MyriadPro, sans-serif;
+    letter-spacing: .03em;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase; }
+    .error-page__catalog-link:hover {
+      opacity: .8; }
+
 .footer .section-title {
   margin-bottom: 25px;
   text-align: left;
